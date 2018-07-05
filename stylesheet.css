@@ -1,0 +1,50 @@
+.indexcity {
+  z-index: 9999;
+}
+.navbar-right{
+  position: absolute;
+  right: 5%;
+  transform: translate(-5%,-0%);
+}
+.logo{
+  position: absolute;
+  left: 5%;
+  transform: translate(-5%,-0%);
+}
+.bg-img{
+  margin-top: 0px !important;
+  background-image: url('assets/img/bulb.jpg');
+  background-attachment: fixed;
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+.navbar-inverse{
+  background-color: transparent;
+  border-color: transparent;
+}
+.right {
+    right: 0 !important;
+    left: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-collapse{
+      background-color:transparent;
+      position: fixed;
+      top: 40px;
+      transition:all 0.8s ease-out;
+      height: 100%;
+      width: 100%;
+      left: -400px;
+    }
+    .navbar-right{
+      position: absolute;
+      right: 0%;
+      transform: translate(-0%,-0%);
+    }
+    .navbar-inverse .navbar-nav>li>a {
+    color: #000;
+    }
+}
